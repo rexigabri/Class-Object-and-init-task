@@ -1,0 +1,68 @@
+#Laptop Information
+class Laptop:
+    def __init__(self, brand, processor, ram, storage):
+        self.brand = brand
+        self.processor = processor
+        self.ram = ram
+        self.storage = storage
+
+    def display(self):
+        print("Laptop Brand:", self.brand)
+        print("Processor:", self.processor)
+        print("RAM:", self.ram)
+        print("Storage:", self.storage)
+
+laptop1 = Laptop("HP", "Intel i5", "8GB", "512GB SSD")
+laptop1.display()
+
+
+#Product Details
+class Product:
+    def __init__(self, product_id, product_name, quantity, price):
+        self.product_id = product_id
+        self.product_name = product_name
+        self.quantity = quantity
+        self.price = price
+
+    def display(self):
+        print("Product ID:", self.product_id)
+        print("Product Name:", self.product_name)
+        print("Quantity:", self.quantity)
+        print("Price:", self.price)
+
+product1 = Product(101, "Laptop Bag", 5, 1200)
+product1.display()
+
+#Movie Information
+class Movie:
+    def __init__(self, movie_name, director, language, release_year):
+        self.movie_name = movie_name
+        self.director = director
+        self.language = language
+        self.release_year = release_year
+
+    def display(self):
+        print("Movie Name:", self.movie_name)
+        print("Director:", self.director)
+        print("Language:", self.language)
+        print("Release Year:", self.release_year)
+
+movie1 = Movie("Vikram", "Lokesh Kanagaraj", "Tamil", 2022)
+movie1.display()
+
+
+#Rectangle Details
+class Rectangle:
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
+
+    def display(self):
+        area = self.length * self.breadth
+
+        print("Length:", self.length)
+        print("Breadth:", self.breadth)
+        print("Area:", area)
+
+rectangle1 = Rectangle(10, 5)
+rectangle1.display()
